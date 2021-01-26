@@ -1,0 +1,218 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-25T17:09:34.485Z",
+    "end": "2021-01-25T17:09:57.043Z",
+    "duration": 22558,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c64f3225-9c1b-44f8-b3e7-48aa0ab7c1bc",
+      "title": "",
+      "fullFile": "cypress\\integration\\ecommerce\\react-app-test-spec.js",
+      "file": "cypress\\integration\\ecommerce\\react-app-test-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+          "title": "Home Page Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Elements Presence in Home Page",
+              "fullTitle": "Home Page Test Suite Verify Elements Presence in Home Page",
+              "timedOut": null,
+              "duration": 5072,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Calling Home Page Element Presence Method and Assert Element Presence\nhomePage.GetElementPresence().should('be.visible');",
+              "err": {},
+              "uuid": "de2e2669-264c-4589-9abb-3f829e0b9d05",
+              "parentUUID": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Shopping Cart Window Expands",
+              "fullTitle": "Home Page Test Suite Verify Shopping Cart Window Expands",
+              "timedOut": null,
+              "duration": 2260,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check Shopping Cart Icon is Visible\nhomePage.GetShoppingCartIcon().should('be.visible'); //Click Shopping Cart Icon to Expand\nhomePage.GetShoppingCartIcon().click();",
+              "err": {},
+              "uuid": "0e0a0582-affd-4ff7-9155-998b357a3256",
+              "parentUUID": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Shopping Cart Window Collapses",
+              "fullTitle": "Home Page Test Suite Verify Shopping Cart Window Collapses",
+              "timedOut": null,
+              "duration": 1614,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check Shopping Cart Icon is Visible\nhomePage.GetShoppingCartIcon().should('be.visible'); //Click Shopping Cart Icon to Expand\nhomePage.GetShoppingCartIcon().click(); //Check Close Button is available\nhomePage.GetCloseButton().should('be.visible'); //Click Close Button to Collapase Shopping Cart\nhomePage.GetCloseButton().click();",
+              "err": {},
+              "uuid": "017ce14b-4e4e-49be-9085-e00dd08442bc",
+              "parentUUID": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Add Single Item To Shopping Cart",
+              "fullTitle": "Home Page Test Suite Verify Add Single Item To Shopping Cart",
+              "timedOut": null,
+              "duration": 1355,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check Availability of Skuul Shirt\nhomePage.GetProductItems(\"Skuul\").should(\"be.visible\"); //Click on the Shirt Skuul\nhomePage.GetProductItems(\"Skuul\").click(); //Assert Product is added to Shopping Cart\nhomePage.GetProductsInsideShoppingCart().should(\"be.visible\");",
+              "err": {},
+              "uuid": "6645dabd-db2d-4c43-9d25-b77d94b6872e",
+              "parentUUID": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Add Multiple Items To Shopping Cart",
+              "fullTitle": "Home Page Test Suite Verify Add Multiple Items To Shopping Cart",
+              "timedOut": null,
+              "duration": 2112,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check Availability of Cat Tee Black T-Shirt Shirt\nhomePage.GetProductItems(\"Cat Tee Black T-Shirt\").should(\"be.visible\"); //Click on the Shirt Cat Tee Black T-Shirt\nhomePage.GetProductItems(\"Cat Tee Black T-Shirt\").click(); //Click on Shirt \nhomePage.GetProductItems(\"Born On The Streets\").click(); //Assert Product is added to Shopping Cart\nhomePage.GetProductsInsideShoppingCart().should(\"be.visible\");",
+              "err": {},
+              "uuid": "d51cdf68-8635-4a78-9bd1-6302499a27e1",
+              "parentUUID": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Remove Single Item From Shopping Cart",
+              "fullTitle": "Home Page Test Suite Verify Remove Single Item From Shopping Cart",
+              "timedOut": null,
+              "duration": 1672,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check Availability of Skuul Shirt\nhomePage.GetProductItems(\"Skuul\").should(\"be.visible\"); //Click on the Shirt Skuul\nhomePage.GetProductItems(\"Skuul\").click(); //Assert Product is added to Shopping Cart\nhomePage.GetProductsInsideShoppingCart().should(\"be.visible\"); //Assert Remove Button is Available inside Shopping Cart\nhomePage.GetRemoveButton().should(\"be.visible\"); //Click Remove Button to Remove Selected Item\nhomePage.GetRemoveButton().click(); //Assert Selected Product is Remove\nhomePage.GetRemoveButton().should(\"not.be.visible\");",
+              "err": {},
+              "uuid": "8a30ae0d-1d55-4179-abed-abde77fc8006",
+              "parentUUID": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Product Checkout From Shopping Cart",
+              "fullTitle": "Home Page Test Suite Verify Product Checkout From Shopping Cart",
+              "timedOut": null,
+              "duration": 1726,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check Availability of Wine Skul T-Shirt Shirt\nhomePage.GetProductItems(\"Wine Skul T-Shirt\").should(\"be.visible\"); //Click on the Shirt Skuul\nhomePage.GetProductItems(\"Wine Skul T-Shirt\").click(); //Assert Product is added to Shopping Cart\nhomePage.GetProductsInsideShoppingCart().should(\"be.visible\"); //Assert Checkout Button Availability\nhomePage.GetCheckoutButton().should(\"be.visible\"); //Click on Checkout Button\nhomePage.GetCheckoutButton().click(); //Assert Checkout Successfull \nhomePage.GetCheckoutSuccess();",
+              "err": {},
+              "uuid": "ec4bec84-eae2-4878-94eb-4870347bab05",
+              "parentUUID": "9e6bcc3e-92ed-4ab7-a37c-0ce1d993ba44",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "de2e2669-264c-4589-9abb-3f829e0b9d05",
+            "0e0a0582-affd-4ff7-9155-998b357a3256",
+            "017ce14b-4e4e-49be-9085-e00dd08442bc",
+            "6645dabd-db2d-4c43-9d25-b77d94b6872e",
+            "d51cdf68-8635-4a78-9bd1-6302499a27e1",
+            "8a30ae0d-1d55-4179-abed-abde77fc8006",
+            "ec4bec84-eae2-4878-94eb-4870347bab05"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15811,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,2 +1,1 @@
-# cypress-framework-iamkavi
-Cypress Full Framework with Mochawesome Reports
+# cypress-e2e-tests
